@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/degradado_main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_marginVertical="25dp"
+            android:text="¡Fragmento!" />
+        <EditText
+            android:id="@+id/editTextActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Mensaje para Fragmento 1"
+            android:textAlignment="center"
+            android:inputType="text"/>
+        <Button
+            android:id="@+id/btnEnviarActivity"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@color/btn"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:text="Enviar"/>
+    </LinearLayout>
+    <fragment
+        android:id="@+id/fragmento"
+        android:name="mx.edu.itm.link.dadm_viewmodel_telefonodescompuesto.Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp" />
+
+</LinearLayout>
